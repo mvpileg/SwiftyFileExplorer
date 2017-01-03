@@ -62,10 +62,8 @@ class FileTableViewController: UITableViewController {
         let item = model.items[indexPath.row]
     
         if let directory = item as? Directory {
-            let storyboard = UIStoryboard(name: "FileExplorer", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "file explorer") as! FileTableViewController
+            let vc = SwiftyFileExplorerUtility.getFileViewController()
             vc.model = FileModel(path: directory.path)
-            
             self.navigationController?.pushViewController(vc, animated: true)
 
         }

@@ -8,14 +8,22 @@
 
 import UIKit
 
-class SwiftyFileExplorerUtility {
+public class SwiftyFileExplorerUtility {
     
     public static func getViewController()->UIViewController? {
-        let fileExplorerStoryboard = UIStoryboard(name: "FileExplorer", bundle: nil)
-        let viewController = fileExplorerStoryboard.instantiateInitialViewController()
-    
-        //note: bundle may need to be populated when we convert to a framework or a cocoapod
-
+        let viewController = storyboard.instantiateInitialViewController()
         return viewController
     }
+    
+    static func getFileViewController()->FileTableViewController {
+        let viewController = storyboard.instantiateViewController(withIdentifier: "file explorer") as! FileTableViewController
+        return viewController
+    }
+    
+    private static var storyboard: UIStoryboard = {
+        let bundle = Bundle(for: SwiftyFileExplorerUtility.self)
+        let storyboardName = "FileExplorer"
+        
+        return UIStoryboard(name: storyboardName, bundle: bundle)
+    }()
 }
