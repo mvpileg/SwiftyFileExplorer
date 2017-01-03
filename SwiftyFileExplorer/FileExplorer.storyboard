@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8Vt-Sk-RqK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="2bR-Bd-j6k">
+            <objects>
+                <tableViewController storyboardIdentifier="file explorer" id="JAv-Qt-EY2" customClass="FileTableViewController" customModule="SwiftyFileExplorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="46" sectionHeaderHeight="28" sectionFooterHeight="28" id="tH5-mB-bnY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="file row" rowHeight="46" id="hqj-ps-WKs" customClass="FileTableViewCell" customModule="SwiftyFileExplorer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="46"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hqj-ps-WKs" id="d1v-2B-zoa">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add" translatesAutoresizingMaskIntoConstraints="NO" id="4mT-Kv-cAd">
+                                            <rect key="frame" x="8" y="8" width="25" height="29.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="File Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KyI-oI-MOa">
+                                            <rect key="frame" x="49" y="12.5" width="76" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="KyI-oI-MOa" firstAttribute="centerY" secondItem="d1v-2B-zoa" secondAttribute="centerY" id="12p-AD-CJ3"/>
+                                        <constraint firstAttribute="topMargin" secondItem="4mT-Kv-cAd" secondAttribute="top" id="ITc-Lx-gpj"/>
+                                        <constraint firstItem="KyI-oI-MOa" firstAttribute="top" relation="greaterThanOrEqual" secondItem="d1v-2B-zoa" secondAttribute="topMargin" constant="4" id="Poz-bt-gTM"/>
+                                        <constraint firstItem="KyI-oI-MOa" firstAttribute="leading" secondItem="4mT-Kv-cAd" secondAttribute="trailing" constant="16" id="X4W-s7-Xrm"/>
+                                        <constraint firstItem="4mT-Kv-cAd" firstAttribute="leading" secondItem="d1v-2B-zoa" secondAttribute="leadingMargin" id="g05-7H-rL1"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="4mT-Kv-cAd" secondAttribute="bottom" id="oTB-ex-3eQ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="fileName" destination="KyI-oI-MOa" id="OGV-je-Ie2"/>
+                                    <outlet property="logo" destination="4mT-Kv-cAd" id="zvt-QP-LBQ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JAv-Qt-EY2" id="L22-ZL-sG4"/>
+                            <outlet property="delegate" destination="JAv-Qt-EY2" id="XVO-md-YWb"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="9CJ-J2-Te9"/>
+                        <barButtonItem title="Cancel" id="G2X-72-gYp">
+                            <connections>
+                                <action selector="close:" destination="JAv-Qt-EY2" id="ev1-Mx-DpE"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="bW6-XN-tQF"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Title" id="EJm-GF-ugA"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0mc-Xh-uQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="492" y="143.47826086956522"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="U3E-xr-mAA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="8Vt-Sk-RqK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HCZ-8S-bQx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="VIF-sO-wgo">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="JAv-Qt-EY2" kind="relationship" relationship="rootViewController" id="Ot1-iu-e1z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uNq-6S-AGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-447.19999999999999" y="143.47826086956522"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add" width="25" height="26"/>
+    </resources>
+</document>

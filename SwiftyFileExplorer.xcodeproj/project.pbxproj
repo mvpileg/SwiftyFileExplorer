@@ -10,6 +10,16 @@
 		C9EA3B171E1C1452009EB6A7 /* SwiftyFileExplorer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EA3B0D1E1C1452009EB6A7 /* SwiftyFileExplorer.framework */; };
 		C9EA3B1C1E1C1452009EB6A7 /* SwiftyFileExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EA3B1B1E1C1452009EB6A7 /* SwiftyFileExplorerTests.swift */; };
 		C9EA3B1E1E1C1452009EB6A7 /* SwiftyFileExplorer.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EA3B101E1C1452009EB6A7 /* SwiftyFileExplorer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9EA3B2B1E1C15E7009EB6A7 /* FileExplorer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9EA3B2A1E1C15E7009EB6A7 /* FileExplorer.storyboard */; };
+		C9EA3B2E1E1C1618009EB6A7 /* FileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EA3B2D1E1C1618009EB6A7 /* FileTableViewCell.swift */; };
+		C9EA3B301E1C1621009EB6A7 /* FileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EA3B2F1E1C1621009EB6A7 /* FileTableViewController.swift */; };
+		C9EA3B351E1C162C009EB6A7 /* FileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EA3B311E1C162C009EB6A7 /* FileModel.swift */; };
+		C9EA3B361E1C162C009EB6A7 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EA3B321E1C162C009EB6A7 /* File.swift */; };
+		C9EA3B371E1C162C009EB6A7 /* Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EA3B331E1C162C009EB6A7 /* Directory.swift */; };
+		C9EA3B381E1C162C009EB6A7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EA3B341E1C162C009EB6A7 /* Item.swift */; };
+		C9EA3B3B1E1C1641009EB6A7 /* FileSaveHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EA3B391E1C1641009EB6A7 /* FileSaveHelper.swift */; };
+		C9EA3B3C1E1C1641009EB6A7 /* SwiftyFileExplorerUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EA3B3A1E1C1641009EB6A7 /* SwiftyFileExplorerUtility.swift */; };
+		C9EA3B3E1E1C1650009EB6A7 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = C9EA3B3D1E1C1650009EB6A7 /* Notes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +39,16 @@
 		C9EA3B161E1C1452009EB6A7 /* SwiftyFileExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyFileExplorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EA3B1B1E1C1452009EB6A7 /* SwiftyFileExplorerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyFileExplorerTests.swift; sourceTree = "<group>"; };
 		C9EA3B1D1E1C1452009EB6A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9EA3B2A1E1C15E7009EB6A7 /* FileExplorer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FileExplorer.storyboard; sourceTree = "<group>"; };
+		C9EA3B2D1E1C1618009EB6A7 /* FileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTableViewCell.swift; sourceTree = "<group>"; };
+		C9EA3B2F1E1C1621009EB6A7 /* FileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTableViewController.swift; sourceTree = "<group>"; };
+		C9EA3B311E1C162C009EB6A7 /* FileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileModel.swift; sourceTree = "<group>"; };
+		C9EA3B321E1C162C009EB6A7 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		C9EA3B331E1C162C009EB6A7 /* Directory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Directory.swift; sourceTree = "<group>"; };
+		C9EA3B341E1C162C009EB6A7 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C9EA3B391E1C1641009EB6A7 /* FileSaveHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSaveHelper.swift; sourceTree = "<group>"; };
+		C9EA3B3A1E1C1641009EB6A7 /* SwiftyFileExplorerUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyFileExplorerUtility.swift; sourceTree = "<group>"; };
+		C9EA3B3D1E1C1650009EB6A7 /* Notes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +73,7 @@
 		C9EA3B031E1C1452009EB6A7 = {
 			isa = PBXGroup;
 			children = (
+				C9EA3B3D1E1C1650009EB6A7 /* Notes */,
 				C9EA3B0F1E1C1452009EB6A7 /* SwiftyFileExplorer */,
 				C9EA3B1A1E1C1452009EB6A7 /* SwiftyFileExplorerTests */,
 				C9EA3B0E1E1C1452009EB6A7 /* Products */,
@@ -71,8 +92,11 @@
 		C9EA3B0F1E1C1452009EB6A7 /* SwiftyFileExplorer */ = {
 			isa = PBXGroup;
 			children = (
-				C9EA3B101E1C1452009EB6A7 /* SwiftyFileExplorer.h */,
-				C9EA3B111E1C1452009EB6A7 /* Info.plist */,
+				C9EA3B2A1E1C15E7009EB6A7 /* FileExplorer.storyboard */,
+				C9EA3B281E1C15C7009EB6A7 /* Model */,
+				C9EA3B271E1C15BF009EB6A7 /* View */,
+				C9EA3B291E1C15CD009EB6A7 /* Controller */,
+				C9EA3B2C1E1C15EE009EB6A7 /* Extra */,
 			);
 			path = SwiftyFileExplorer;
 			sourceTree = "<group>";
@@ -84,6 +108,44 @@
 				C9EA3B1D1E1C1452009EB6A7 /* Info.plist */,
 			);
 			path = SwiftyFileExplorerTests;
+			sourceTree = "<group>";
+		};
+		C9EA3B271E1C15BF009EB6A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9EA3B2D1E1C1618009EB6A7 /* FileTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C9EA3B281E1C15C7009EB6A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9EA3B311E1C162C009EB6A7 /* FileModel.swift */,
+				C9EA3B321E1C162C009EB6A7 /* File.swift */,
+				C9EA3B331E1C162C009EB6A7 /* Directory.swift */,
+				C9EA3B341E1C162C009EB6A7 /* Item.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C9EA3B291E1C15CD009EB6A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9EA3B2F1E1C1621009EB6A7 /* FileTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C9EA3B2C1E1C15EE009EB6A7 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				C9EA3B391E1C1641009EB6A7 /* FileSaveHelper.swift */,
+				C9EA3B3A1E1C1641009EB6A7 /* SwiftyFileExplorerUtility.swift */,
+				C9EA3B111E1C1452009EB6A7 /* Info.plist */,
+				C9EA3B101E1C1452009EB6A7 /* SwiftyFileExplorer.h */,
+			);
+			name = Extra;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +211,7 @@
 					C9EA3B0C1E1C1452009EB6A7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7A4VPG8L6G;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					C9EA3B151E1C1452009EB6A7 = {
@@ -181,6 +244,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9EA3B3E1E1C1650009EB6A7 /* Notes in Resources */,
+				C9EA3B2B1E1C15E7009EB6A7 /* FileExplorer.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +263,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9EA3B2E1E1C1618009EB6A7 /* FileTableViewCell.swift in Sources */,
+				C9EA3B361E1C162C009EB6A7 /* File.swift in Sources */,
+				C9EA3B351E1C162C009EB6A7 /* FileModel.swift in Sources */,
+				C9EA3B301E1C1621009EB6A7 /* FileTableViewController.swift in Sources */,
+				C9EA3B381E1C162C009EB6A7 /* Item.swift in Sources */,
+				C9EA3B3C1E1C1641009EB6A7 /* SwiftyFileExplorerUtility.swift in Sources */,
+				C9EA3B3B1E1C1641009EB6A7 /* FileSaveHelper.swift in Sources */,
+				C9EA3B371E1C162C009EB6A7 /* Directory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +395,7 @@
 		C9EA3B221E1C1452009EB6A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7A4VPG8L6G;
@@ -334,6 +408,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mvp.SwiftyFileExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +416,7 @@
 		C9EA3B231E1C1452009EB6A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7A4VPG8L6G;
@@ -360,6 +436,7 @@
 		C9EA3B251E1C1452009EB6A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7A4VPG8L6G;
 				INFOPLIST_FILE = SwiftyFileExplorerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +449,7 @@
 		C9EA3B261E1C1452009EB6A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 7A4VPG8L6G;
 				INFOPLIST_FILE = SwiftyFileExplorerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

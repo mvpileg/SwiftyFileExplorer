@@ -1,0 +1,14 @@
+
+Revisist FileSaveHelper - need a more integrated version
+    -- idea.  No super integrated version.. just delete the extra stuff and add file conversions to a utility class of sorts
+    --BETTER IDEA - MAKE FILESAVEHELPER ITS OWN COCOAPOD
+
+Add functionality for saving file in a specific place in explorer - where to we enter file name?
+    -- idea.  Click folder = open folder.  Save button always next to cancel.  Save creates alert view to enter the name
+^ in a default place without opening explorer
+open files with explorer
+open files without explorer
+
+How is bundle handled when in a CocoaPod?
+Figure out best way to handle select (press select, select and confirm in toolbar, etc.)
+Does user supply images?
